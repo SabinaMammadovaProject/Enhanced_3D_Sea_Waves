@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Sea Waves with Camera Controls</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      canvas {
+        display: block;
+      }
+      .camera-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="position1" class="camera-btn">Position 1</button>
+    <button id="position2" class="camera-btn" style="left: 90px">
+      Position 2
+    </button>
+    <button id="position3" class="camera-btn" style="left: 170px">
+      Position 3
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="waves.js"></script>
+    <!-- Your JavaScript code will go here -->
+  </body>
+</html>
